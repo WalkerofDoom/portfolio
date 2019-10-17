@@ -1,0 +1,59 @@
+body{
+	background-color:black;
+}
+a:link {
+text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+}
+.teste{
+	padding-top:10vh;
+	background-color:yellow;
+	height:100vh;
+}
+.cabecalho{
+	position:fixed;
+	z-index:102;
+}
+.fundo_modal, .formulario, .fundo_modal_cadastro, .formulario_cadastro{
+	display:none;
+
+}
+.fundo_modal, .fundo_modal_cadastro{
+	left:0;
+	top:0;
+	z-index:101;
+	width:100vw;
+	height:100vh;
+	position:fixed;
+}
+.formulario, .formulario_cadastro{
+	position:absolute;
+}
+.formulario{
+	z-index:102;
+	border:1px black solid;
+	left:178px;
+	top:42px;
+	background-color:white;
+}
+.formulario_cadastro{
+	z-index:102;
+	padding:8px;
+	border:1px black solid;
+	left:250px;
+	top:42px;
+	background-color:white;
+}
+.cabecalho{
+	height:10vh;
+	background-color:white;
+}
+.rodape{
+	height:20vh;
+	background-color:white;
+}
