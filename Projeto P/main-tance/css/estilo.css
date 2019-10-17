@@ -1,6 +1,9 @@
 body{
 	background-color:black;
 }
+a{
+	vertical-align: middle;
+}
 a:link {
 text-decoration:none;
 }

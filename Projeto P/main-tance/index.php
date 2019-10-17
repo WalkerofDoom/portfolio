@@ -12,12 +12,12 @@
 			<div class="row d-flex justify-content-center">
 				<div class="row cabecalho">
 					<div class="btn-group">
-						<button class="btn btn-secondary">Início</button>
+						<a href="google.com" class="btn btn-secondary">Início</a>
 						<button class="btn btn-secondary">Portfólios</button>
 						<button class="btn btn-secondary">Pesquisar</button>
 <?php
 	include "php\login.php";
-	//if usuario deslogado
+	if(isset($_SESSION['id_usuario'])){
 ?>
 						<button class="btn btn-secondary" id="botao_modal" onClick="modal_entrar('fundo_modal');modal_entrar('formulario');">Entrar</button>
 						<div class="fundo_modal" id="fundo_modal" onClick="modal_entrar('fundo_modal');modal_entrar('formulario');">
@@ -39,12 +39,12 @@
 							<center><input type="submit" class="btn btn-danger" name="botao" value="Cadastrar"></center>
 						</form>
 <?php
-	//if usuario logado
+	}else{
 ?>
 						<button class="btn btn-secondary">Usuário</button>
 						<button class="btn btn-secondary">Sair</button>
 <?php
-	//termina if
+	}
 ?>
 					</div>
 				</div>
