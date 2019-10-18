@@ -20,12 +20,13 @@ if (@$_REQUEST['botao']=="Entrar"){
 	}else{
 		echo "<script>alert('Preencha os campos com seu login!')</script>";
 	}
-}else if(@$_REQUEST['botao']=="Cadastrar"){
-
-	/*if(){
+}/*else if(@$_REQUEST['botao']=="Cadastrar"){
+	$result = mysqli_query($con,"SELECT * FROM usuario WHERE email='".$_POST['entrar_email']."' AND senha='".md5($_POST['entrar_senha'])."';");
+	if(mysqli_num_rows($result)=0){
 		mysqli_query($con,"INSERT INTO usuario(login,nome,senha,nivelAcesso) VALUES('".$_POST['loginCadastro']."','".$_POST['nomeCadastro']."','".md5($_POST['senhaCadastro'])."','".$_POST['nivelAcesso']."');");
 		echo "<script>alert('Cadastrado com sucesso!')</script>";
 	}else{
 		echo "<script>alert('Usuário já cadastrado.')</script>";
-	}*/
+	}
 }
+*/
